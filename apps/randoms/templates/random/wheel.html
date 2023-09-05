@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHEEL</title>
+    <style>
+        .text {
+         text-align:  center;
+        }
+        .aligncenter {
+            text-align: center;
+        }
+       </style>
+</head>
+<body>
+    {% extends "random/base.html" %}
+    {% block content %}
+    <br>
+    <hr>
+    <div class="text">
+        <p><h1>КРУТИМ КОЛЕСО!!! ВЫПАДАЕТ: {{ random_number }}</h1></p>
+     </div>
+    <p class="aligncenter">
+        <img src="/static/images/roll.gif" alt="Рулетка" width="40%"/>
+     </p>
+        <br>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    {% endblock content %}
+</body>
+</html>
+
